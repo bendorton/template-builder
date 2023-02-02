@@ -1,7 +1,5 @@
 class TemplateController < ApplicationController
-  def view
-  end
+  def view; end
 
-  def list
-  end
+  def list; end
 end

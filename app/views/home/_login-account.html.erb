@@ -11,9 +11,7 @@
     <%= current_user.email %>
   </a>
   <ul class="dropdown-menu dropdown-menu-lg-end">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li><%= link_to 'Account', edit_user_registration_path, class:"dropdown-item" %></li>
     <li><hr class="dropdown-divider" /></li>
     <li>
       <%= link_to 'Sign Out', destroy_user_session_path, class:"dropdown-item",

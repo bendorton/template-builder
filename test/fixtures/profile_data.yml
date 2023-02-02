@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  profile: one
+  profile_section: one
+  title: MyString
+  subtitle: MyString
+  start_date: 2023-01-27
+  end_date: 2023-01-27
+  location: MyString
+  description: MyString
+  items: MyString
+
+two:
+  profile: two
+  profile_section: two
+  title: MyString
+  subtitle: MyString
+  start_date: 2023-01-27
+  end_date: 2023-01-27
+  location: MyString
+  description: MyString
+  items: MyString

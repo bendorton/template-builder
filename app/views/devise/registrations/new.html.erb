@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row d-flex justify-content-center align-items-center h-100">
+    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+      <div class="card bg-dark text-white" style="border-radius: 1rem;">
+        <div class="card-body p-5 text-center">
+
+          <h2 class="card-title fw-bold mb-2 text-uppercase">Sign Up</h2>
+
+          <div class="mt-md-4">
+
+            <%= bootstrap_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+              <%= render "devise/shared/error_messages", resource: resource %>
+
+              <%= f.email_field :email, 
+                                autofocus: true, autocomplete: "email", 
+                                class: "form-control form-control-lg", 
+                                placeholder: :email, 
+                                hide_label: true %>
+
+              <% if @minimum_password_length %>
+                <em>(<%= @minimum_password_length %> characters minimum)</em>
+              <% end %><br />
+              <%= f.password_field :password, 
+                                      autocomplete: "new-password", 
+                                      class: "form-control form-control-lg", 
+                                      placeholder: :password, 
+                                      hide_label: true %>
+
+              <%= f.password_field :password_confirmation, 
+                                      autocomplete: "new-password", 
+                                      class: "form-control form-control-lg", 
+                                      placeholder: :password_confirmation, 
+                                      hide_label: true %>
+
+              <br/>
+              <%= f.submit "Sign Up", class: "btn btn-outline-light btn-lg login-button" %>
+            <% end %>
+
+            <br/>
+            <%= render "devise/shared/links" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
