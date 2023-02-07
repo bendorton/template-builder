@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :profiles
-  devise_for :users
+  devise_for :users, controllers: { registrations: 'registrations' }
   get 'template/view'
   get 'template/list'
   get 'home/index'

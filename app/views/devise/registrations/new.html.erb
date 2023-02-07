@@ -17,20 +17,25 @@
                                 placeholder: :email, 
                                 hide_label: true %>
 
+              <%= f.text_field :username,
+	                              class: 'form-control form-control-lg',
+                                placeholder: :username,
+                                hide_label: true %>
+
               <% if @minimum_password_length %>
                 <em>(<%= @minimum_password_length %> characters minimum)</em>
               <% end %><br />
               <%= f.password_field :password, 
-                                      autocomplete: "new-password", 
-                                      class: "form-control form-control-lg", 
-                                      placeholder: :password, 
-                                      hide_label: true %>
+                                    autocomplete: "new-password", 
+                                    class: "form-control form-control-lg", 
+                                    placeholder: :password, 
+                                    hide_label: true %>
 
               <%= f.password_field :password_confirmation, 
-                                      autocomplete: "new-password", 
-                                      class: "form-control form-control-lg", 
-                                      placeholder: :password_confirmation, 
-                                      hide_label: true %>
+                                    autocomplete: "new-password", 
+                                    class: "form-control form-control-lg", 
+                                    placeholder: :password_confirmation, 
+                                    hide_label: true %>
 
               <br/>
               <%= f.submit "Sign Up", class: "btn btn-outline-light btn-lg login-button" %>
